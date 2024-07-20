@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Roll</title>
+</head>
+
+<body>
+  <!-- Eh toi là, inutile de modifier le HTML : l'objectif est d'insérer des élements via JS ! Bonne chance ! -->
+  <div id="app">
+    <form class="form" action="">
+      <label class="label" for="dices">Combien de dés voulez-vous jouer ?</label>
+      <input id="dices" type="range" name="dices" min="1" value="10" max="20">
+      <div class="dices_value"></div>
+      <button id="play">Lancer !</button>
+
+    </form>
+    <div class="board" id="player"></div>
+    <div class="board" id="dealer"></div>
+  </div>
+  <div id="score"></div>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

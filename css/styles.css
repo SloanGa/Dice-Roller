@@ -1,0 +1,117 @@
+/* Aucune modification du CSS n'est nécessaire pour valider l'exercice ! Bonne chance ! */
+
+body {
+  background-color: #f39c12;
+}
+
+#app {
+  display: flex;
+}
+
+#player {
+  background-color: #f39c12;
+}
+
+#dealer {
+  background-color: #e67e22;
+}
+
+.board {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.dice {
+  background-image: url("../images/dice-sprite.png");
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 2rem;
+}
+
+.label {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.buttonReplay {
+  position: absolute;
+  top: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.199);
+  margin-top: 30px;
+  cursor: pointer;
+  width: 200px;
+  padding: 5px;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 7px;
+  transition: ease 10ms;
+  background: rgb(243, 156, 18);
+  background: linear-gradient(90deg, rgba(243, 156, 18, 1) 38%, rgba(230, 126, 34, 1) 58%);
+}
+
+#play {
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 200px;
+  padding: 5px;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 7px;
+  background: rgb(230, 126, 34);
+  background: linear-gradient(90deg, rgba(230, 126, 34, 1) 0%, rgba(230, 188, 34, 1) 100%);
+}
+
+.buttonReplay:hover {
+  background: rgb(230, 126, 34);
+  background: linear-gradient(90deg, rgba(230, 126, 34, 1) 0%, rgba(230, 188, 34, 1) 100%);
+  border: 1px solid transparent;
+}
+
+#play:hover {
+  border: 1px solid rgba(255, 255, 255, 0.199);
+  background: rgb(243, 156, 18);
+  background: linear-gradient(90deg, rgba(243, 156, 18, 1) 38%, rgba(230, 126, 34, 1) 58%);
+}
+
+.dices_value {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#score {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.747);
+  display: flex;
+  justify-content: space-around;
+  background: rgb(243, 156, 18);
+  background: linear-gradient(90deg, rgba(243, 156, 18, 1) 38%, rgba(230, 126, 34, 1) 58%);
+}
+
+.scoreR {
+  position: absolute;
+  left: 25%;
+  top: 90%;
+}
+
+.scoreL {
+  position: absolute;
+  right: 25%;
+  top: 90%;
+}
